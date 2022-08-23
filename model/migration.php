@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 try {
     // Connecting to date base
     $connect = new PDO("sqlite:$db");
+    
     // SQL request on create table
-    $sql = "
-    CREATE TABLE IF NOT EXISTS `Roulette`(
+    $sql = " CREATE TABLE IF NOT EXISTS `Roulette`(
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         sector INTEGER NOT NULL,
         half INTEGER,
@@ -15,9 +15,11 @@ try {
         color TEXT,
         stat INTEGER DEFAULT 0
     )";
+
     // Completing sql request
     $connect -> exec($sql);
     echo "Created table casino roulette";
+
     // Fill table
     $sql = "INSERT INTO `Roulette`(sector, parity, color) VALUES
     (0, 'zero', 'green'),

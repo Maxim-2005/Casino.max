@@ -10,7 +10,21 @@ body {
     background-color: darkgreen;
 }
 
-form{
+form {
     margin :16px;
     text-align: center;
+}
+
+div {
+    padding: 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
 }
