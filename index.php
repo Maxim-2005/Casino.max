@@ -1,4 +1,5 @@
-<? 
+<?
+error_reporting(E_ALL);
 // model
 require_once("model/roulette.php");
 require_once("model/user.php");

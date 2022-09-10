@@ -1,3 +1,12 @@
+<?php
+    header('content-type: text/css');
+    $bgColor = 'darkgreen';
+?>
+
+:root{
+    --font-color: lime;
+}
+
 html, body{
     width: 100%;
     height: 100%;
@@ -7,7 +16,8 @@ html, body{
 }
 
 body {
-    background-color: darkgreen;
+    background-color: <?=$bgColor?>;
+    color: var(--font-color);
 }
 
 form {
